@@ -1,0 +1,37 @@
+{
+    "name": "wongpinter/feeder",
+    "description": "Feeder client application for Feeder Kopertis",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WongPinter",
+            "email": "root@wongpinter.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wongpinter\\Feeder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wongpinter\\Feeder\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5.6",
+        "wongpinter/soap-client": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wongpinter\\Feeder\\FeederServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
