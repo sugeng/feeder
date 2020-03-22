@@ -24,7 +24,7 @@ class Base
     public function tables()
     {
         if ($records = $this->soap->ListTable($this->token)) {
-            return (isset($records['result'])) ?: $records;
+            return ($records['result']) ?: $records;
         }
 
         return false;
