@@ -11,7 +11,3 @@ Route::group(['prefix' => 'feeder'], function() {
     Route::get('records/{table}/{limit?}', "FeederController@records");
     Route::get('save', "FeederController@saveRecords");
 });
-
-Route::get('testi', function() {
-    return "test";
-});

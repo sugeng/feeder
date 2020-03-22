@@ -36,18 +36,7 @@ class FeederController extends Controller
 
     public function saveRecords(Base $feeder)
     {
-
         $offset_num = 1;
-
-//        $header = id_wil	"016200  "
-//id_negara	"ID"
-//nm_wil	"Kota Jakarta Barat            "
-//asal_wil	"NULL    "
-//kode_bps	null
-//kode_dagri	null
-//kode_keu	null
-//id_induk_wilayah	"010000  "
-//id_level_wil	"2"
         $header = ['id_wilayah', 'id_negara', 'nama_wilayah', 'asal_wilayah', 'id_induk_wilayah', 'id_level_wilayah'];
 
         $csv = Writer::createFromPath(storage_path('wilayah.csv'), 'w+');
@@ -66,6 +55,7 @@ class FeederController extends Controller
                         $row['id_wil'], $row['id_negara'], $row['nm_wil'], $row['asal_wil'], $row['id_induk_wilayah'], $row['id_level_wil']
                     ]);
                 }
+
                 dump($data['offset']);
             } else {
                 return false;
