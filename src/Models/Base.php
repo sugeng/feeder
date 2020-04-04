@@ -1,10 +1,12 @@
 <?php namespace Wongpinter\Feeder\Models;
+use Wongpinter\Feeder\Contracts\FeederModelInterface;
+
 /**
  * Created By: Sugeng
  * Date: 2019-08-13
  * Time: 23:27
  */
-class Base
+class Base implements FeederModelInterface
 {
     protected $table;
     protected $filter = '';
