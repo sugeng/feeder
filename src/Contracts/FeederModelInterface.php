@@ -9,4 +9,14 @@ interface FeederModelInterface
     public function get();
 
     public function first();
+
+    public function insert($data);
+
+    public function update($key, $data);
+
+    public function insertBatch($data);
+
+    public function updateBatch($data);
+
+    public function filter($filter);
 }
