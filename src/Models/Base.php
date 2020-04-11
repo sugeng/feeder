@@ -160,4 +160,9 @@ class Base implements FeederModelInterface
 
         return null;
     }
+
+    public function search($filter)
+    {
+        return $this->filter($filter)->first();
+    }
 }

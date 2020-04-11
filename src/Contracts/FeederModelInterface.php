@@ -19,4 +19,6 @@ interface FeederModelInterface
     public function updateBatch($data);
 
     public function filter($filter);
+
+    public function search($filter);
 }
