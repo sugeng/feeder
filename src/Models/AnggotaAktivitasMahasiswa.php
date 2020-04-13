@@ -5,7 +5,7 @@
  * Time: 09.32
  */
 
-class AnggotaAktivitasMahasiswa extends BaseModel
+class AnggotaAktivitasMahasiswa extends Base
 {
     protected $table = "anggota_aktivitas_mahasiswa";
 }
